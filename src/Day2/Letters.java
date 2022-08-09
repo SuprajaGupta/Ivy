@@ -1,26 +1,57 @@
 package Day2;
 import java.util.*;
+import java.util.Scanner;
 
 public class Letters {
-       public static StringBuffer swapCase(String s)
-        {
-        StringBuffer str =new StringBuffer(s);
-        for (int i = 0; i < str.length(); i++) {
-        Character c = str.charAt(i);
-        if (Character.isLowerCase(c))
-        str.replace(i, i + 1,Character.toUpperCase(c) + "");
-        else
-        str.replace(i, i + 1,Character.toLowerCase(c) + "");
-        }
-        return str;
-        }
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String string=sc.nextLine();
-        System.out.println("String after swapping cases is "+(swapCase(string)));
-        }
+        Scanner Sc=new Scanner(System.in);
+        System.out.println("Enter the String ");
+        String str=Sc.nextLine();
+        StringBuffer newStr=new StringBuffer(str);
 
+        for(int i = 0; i < str.length(); i++) {
+
+            if(Character.isLowerCase(str.charAt(i))) {
+
+                newStr.setCharAt(i, Character.toUpperCase(str.charAt(i)));
+            }
+
+            else if(Character.isUpperCase(str.charAt(i))) {
+
+                newStr.setCharAt(i, Character.toLowerCase(str.charAt(i)));
+            }
         }
+        System.out.println("New String is  : " + newStr);
+    }
+}
+
+
+
+//public class Letters {
+//
+//    public static void main(String[] args) {
+//        Scanner Sc=new Scanner(System.in);
+//        System.out.println("Enter the String ");
+//        String str=Sc.nextLine();
+//        StringBuffer newStr=new StringBuffer(str);
+//
+//        for(int i = 0; i < str.length(); i++) {
+//
+//
+//            if(Character.isLowerCase(str.charAt(i))) {
+//
+//                newStr.setCharAt(i, Character.toUpperCase(str.charAt(i)));
+//            }
+//
+//            else if(Character.isUpperCase(str.charAt(i))) {
+//
+//                newStr.setCharAt(i, Character.toLowerCase(str.charAt(i)));
+//            }
+//        }
+//        System.out.println("New String after Case  : " + newStr);
+//    }
+//}
+
 
 
 

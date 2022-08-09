@@ -1,3 +1,5 @@
+package Day1;
+
 import java.util.Scanner;
 public class LabAllocation {
     public static void main(String [] args)

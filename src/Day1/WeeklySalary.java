@@ -1,3 +1,5 @@
+package Day1;
+
 import java.util.Scanner;
 
 public class WeeklySalary {
@@ -34,7 +36,7 @@ public class WeeklySalary {
 
 //import java.util.Scanner;
 //
-//public class WeeklySalary {
+//public class Day1.WeeklySalary {
 //
 //    public static void main(String [] args)
 //    {

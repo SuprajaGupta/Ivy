@@ -1,3 +1,5 @@
+package Day1;
+
 import java.util.Scanner;
 public class Collatz {
     public static void main(String args[])
@@ -25,7 +27,7 @@ public class Collatz {
 }
 
 //import java.util.*;
-//public class Collatz {
+//public class Day1.Collatz {
 //        public static void main(String args[]) {
 //            Scanner sc =new Scanner(System.in);
 //            System.out.println("Enter Number ");

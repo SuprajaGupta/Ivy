@@ -1,3 +1,5 @@
+package Day1;
+
 //package org.ivy.training;
 //sbi.cards.creditcards.rewardpoints.redemption;
 public class Demo {

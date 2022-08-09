@@ -1,30 +1,47 @@
 package Day1;
-
 import java.util.Scanner;
 public class Collatz {
-    public static void main(String args[])
-    {
-        Scanner Sc = new Scanner(System.in);
-        System.out.println("Enter the no :");
-        int number= Sc.nextInt();
-
-        while (number != 1)
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.print(n+" ");
+        while(n>1)
         {
-            System.out.println(number + " ");
-
-
-            if ((number & 1) == 1)
-                number = number * number + 1;
-
-
-            else
-                number = number / 2;
+            if(n%2==0){
+                System.out.print(n/2+"->");
+                n=n/2;
+            }
+            else{
+                System.out.print((3*n+1)+"->");
+                n=3*n+1;
+            }
         }
-
-        // Print 1 at the end
-        System.out.print(number);
     }
 }
+
+//import java.util.Scanner;
+//public class Collatz {
+//    public static void main(String args[]) {
+//        Scanner Sc = new Scanner(System.in);
+//        System.out.println("Enter the no :");
+//        int number = Sc.nextInt();
+//
+//        while (number != 1) {
+//            System.out.println(number + " ");
+//
+//
+//            if ((number & 1) == 1)
+//                number = number * number + 1;
+//
+//
+//            else
+//                number = number / 2;
+//        }
+//
+//        // Print 1 at the end
+//        System.out.print(number);
+//    }
+//}
 
 //import java.util.*;
 //public class Day1.Collatz {
